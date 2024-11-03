@@ -3,7 +3,7 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main  # یا نام هر برنچ دیگری که می‌خواهید CI روی آن انجام شود
+      - master
 
 jobs:
   build:

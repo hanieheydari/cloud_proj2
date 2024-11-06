@@ -14,7 +14,7 @@ API_KEY = os.getenv("API_KEY")
 CACHE_TIMEOUT = int(os.getenv("CACHE_TIMEOUT", 300))  
 
 
-@app.route('/define/<word>', methods=['GET'])
+@app.route('/definition/<word>', methods=['GET'])
 def get_definition(word):
     cache_key = f"definition:{word}"
     cached_def = cache.get(cache_key)
